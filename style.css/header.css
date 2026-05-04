@@ -1,0 +1,58 @@
+.header{
+  background-color: lightskyblue;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  transition: font-size 0.5s;
+  z-index: 100;
+}
+.header:hover {
+  font-size: 70px;
+}
+.welcome{
+  opacity: 0;
+  position: absolute;
+  margin-top: 90px;
+  background-color: aquamarine;
+  padding: 3px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: black;
+  transition: opacity 0.5s;
+  font-size: 25px;
+}
+
+.header:hover .welcome{
+  opacity: 1;
+}
+
+@media(max-width: 1080px){
+
+}
+
+@media(max-width: 750px){
+.header{
+  font-size: 30px;
+}
+.welcome{
+  font-size: 20px;
+}
+
+.header:hover {
+  font-size: 40px;
+}
+}
+
+@media(max-width: 480px){
+  .header{
+    font-size: 25px;
+  }
+}

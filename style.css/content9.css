@@ -1,0 +1,73 @@
+.content9{
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+
+.endingimg img{
+width: 300px;
+height: 300px;
+border-radius: 200px;
+transition: transform 0.5s;
+}
+.endingimg img:hover{
+transform: scale(0.9);
+}
+.goodbye{
+  font-size: 50px;
+  cursor: pointer;
+  transition: color 0.5s,
+   transform 0.5s,
+   0.5s;
+} 
+
+.goodbye:hover{
+  color: rgb(89, 0, 255);
+  transform: scale(1.5);
+}
+
+@media(max-width: 1080px){
+
+}
+
+
+
+@media(max-width: 750px){
+.endingimg img{
+  width: 150px;
+  height: 150px;
+}
+.endingimg img:hover{
+transform: scale(1.2);
+}
+.goodbye{
+font-size: 20px;
+}
+.goodbye:hover{
+  color: rgb(89, 0, 255);
+  transform: scale(0.9);
+}
+
+}
+
+
+
+@media(max-width: 480px){
+  .endingimg img{
+  width: 130px;
+  height: 130px;
+}
+.endingimg img:hover{
+transform: scale(1.2);
+}
+.goodbye{
+font-size: 15px;
+}
+.goodbye:hover{
+  color: rgb(89, 0, 255);
+  transform: scale(0.9);
+}
+}

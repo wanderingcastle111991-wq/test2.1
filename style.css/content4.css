@@ -1,0 +1,127 @@
+.content4{
+  display: flex;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  column-gap: 30px;
+  overflow-x: auto;
+}
+
+.scroll1{
+  flex-direction: column;
+  display: flex;
+  overflow-y: auto;
+  height: 600px;
+  scroll-behavior: smooth;
+  row-gap: 30px;
+  width: 200px;/*important so no error*/
+  flex-shrink: 0;/*important so no error*/
+  overflow-x: hidden;/*important so no error*/
+}
+.scroll1::-webkit-scrollbar {/**/
+    width: 0px;
+    background: transparent;
+}
+
+.scroll2{
+  flex-direction: column;
+  display: flex;
+  overflow-y: auto;
+  height: 600px;
+  scroll-behavior: smooth;
+  row-gap: 30px;
+  width: 200px;/*important so no error*/
+  flex-shrink: 0;/**/
+  overflow-x: hidden;/**/
+}
+.scroll2::-webkit-scrollbar {/**/
+    flex-direction: column;
+    display: flex;
+    width: 0px;
+    background: transparent;
+}
+
+.scroll-word-and-image{
+   width: 200px;
+}
+
+.scroll-word-and-image img{
+  height: 200px;
+  width: 200px;
+  border-radius: 50px;
+  object-fit: cover;
+  transition:transform 0.5s;
+}
+.scroll-word-and-image img:hover {
+  transform: scale(1.4);
+}
+.wordcontrol{
+  margin-top: 10px;
+  padding: 20px;
+  background-color: lightgrey;
+  font-weight: bold;
+  font-size: 15px;
+  font-style: italic;
+  transition: transform 0.5s;
+}
+.wordcontrol:hover{
+  transform: scale(1.2);
+}
+
+@media(max-width: 1080px){
+
+}
+
+
+@media(max-width: 750px){
+    .content4{
+  display: flex;
+  column-gap: 5px;
+  overflow-x: auto;
+  margin-left: 10px;
+}
+
+.scroll-word-and-image img{
+ width: 150px;
+ height: 150px;
+ object-fit: cover;
+}
+.scroll-word-and-image img:hover {
+  transform: scale(1.1);
+}
+
+.wordcontrol{
+ width: 100px;
+}
+.wordcontrol:hover{
+  transform: scale(1.2);
+}
+}
+
+/**/
+@media(max-width: 480px){
+  .content4{
+  display: flex;
+  column-gap: 5px;
+  overflow-x: auto;
+  margin-left: 10px;
+}
+
+.scroll-word-and-image img{
+ width: 150px;
+ height: 150px;
+ object-fit: cover;
+}
+.scroll-word-and-image img:hover {
+  transform: scale(1.1);
+}
+
+.wordcontrol{
+ width: 100px;
+}
+.wordcontrol:hover{
+  transform: scale(1.2);
+}
+}
+
+
+
